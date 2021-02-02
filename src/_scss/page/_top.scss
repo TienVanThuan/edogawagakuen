@@ -1,0 +1,500 @@
+/* =========================================================
+top - Topページ固有のオブジェクト
+========================================================= */
+.p-top {
+  &__mv {
+    padding-bottom: 60px;
+    @include mq(md, max) {
+      padding-top: 14px;
+      padding-bottom: 56px;
+    }
+    @media screen and (max-width: 1024px) {
+      padding-bottom: 56px;
+    }
+  }
+  &__intro {
+    padding-top: 37px;
+    @include mq(lg, max) {
+      padding-top: 72px;
+      .c-title h2 {
+        padding-right: 8px;
+        padding-bottom: 37px;
+      }
+    }
+    @media screen and (max-width: 1024px) {
+      padding-top: 0;
+    }
+    @include mq(md, max) {
+      padding-top: 0;
+    }
+    &--row {
+      padding-top: 57px;
+      padding-bottom: 50px;
+      @media screen and (max-width: 1024px) {
+        padding-top: 40px;
+        padding-left: 38px;
+        padding-right: 37px;
+        padding-bottom: 20px;
+      }
+      @include mq(md, max) {
+        padding-top: 40px;
+        padding-left: 38px;
+        padding-right: 37px;
+        padding-bottom: 20px;
+      }
+    }
+    @media screen and (max-width: 1024px) {
+      &--boxWrap {
+        max-width: 100%;
+        flex: 100%;
+        img {
+          margin: auto;
+        }
+      }
+    }
+    &--box {
+      position: relative;
+      &:hover {
+        a {
+          opacity: 1;
+          .p-top__intro--box__content {
+            opacity: 0.9;
+          }
+        }
+      }
+      @media screen and (max-width: 1024px) {
+        margin-bottom: 40px;
+      }
+      @include mq(md, max) {
+        margin-bottom: 20px;
+      }
+      &__content {
+        position: absolute;
+        width: calc(100% - 69px);
+        height: calc(77.5% - 1px);
+        text-align: center;
+        display: flex;
+        background-color: #fff;
+        opacity: 0.8;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 9;
+        @media screen and (max-width: 1024px) {
+          width: calc(77% - 57px);
+          // width: calc(100% - 40px);
+          height: calc(67% - 1px);
+        }
+        @include mq(md, max) {
+          width: calc(100% - 40px);
+          max-width: 560px;
+        }
+        p {
+          font-size: 1.375rem;
+          line-height: 1.75rem;
+          font-weight: bold;
+          letter-spacing: 0.8px;
+          @media screen and (max-width: 1024px) {
+            margin-top: -1px;
+            font-size: 0.9rem;
+          }
+          @include mq(md, max) {
+            margin-top: -1px;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+  &__message {
+    padding-top: 42px;
+    padding-bottom: 60px;
+    @media screen and (max-width: 1024px) {
+      padding-top: 24px;
+      padding-bottom: 20px;
+    }
+    @include mq(md, max) {
+      padding-top: 24px;
+      padding-bottom: 20px;
+    }
+    .c-title h2 {
+      padding-left: 9px;
+      letter-spacing: 2px;
+      padding-bottom: 27px;
+      @media screen and (max-width: 1024px) {
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        padding-right: 13px;
+        padding-bottom: 35px;
+      }
+      @include mq(md, max) {
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        padding-right: 13px;
+        padding-bottom: 35px;
+      }
+    }
+    &--content {
+      position: relative;
+      max-width: 949px;
+      margin-top: 98px;
+      background-color: #c0254b;
+      padding: 54px 45px 42px 0;
+      margin-right: 0;
+      margin-left: auto;
+      display: flex;
+      justify-content: flex-end;
+      @media screen and (max-width: 1024px) {
+        width: 95%;
+        margin-top: 372px;
+        display: block;
+        padding: 80px 65px 62px 74px;
+      }
+      @include mq(md, max) {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 100px;
+        padding: 46px 65px 53px 70px;
+      }
+      @include mq(sm, max) {
+        width: 95%;
+        margin-top: 186px;
+        display: block;
+        padding: 91px 24px 31px 38px;
+      }
+      &-img {
+        position: absolute;
+        top: -40px;
+        left: -31px;
+        width: 52%;
+        max-width: 476px;
+        @media screen and (max-width: 1270px) {
+          left: -20px;
+        }
+        @media screen and (max-width: 1024px) {
+          top: -293px;
+          left: -20px;
+          max-width: 84.5%;
+          width: 100%;
+          img.u-pc {
+            display: block !important;
+          }
+          img.u-sp2 {
+            display: none !important;
+          }
+        }
+        @include mq(md, max) {
+          top: -30px;
+          left: -17px;
+          max-width: 50.5%;
+          img {
+            width: 350px;
+            margin-left: 0;
+          }
+        }
+        @include mq(sm, max) {
+          top: -170px;
+          left: 47.5%;
+          max-width: 100%;
+          transform: translateX(-50%);
+          img {
+            width: 340px;
+            margin: auto;
+          }
+        }
+        @media screen and (max-width: 321px) {
+          img {
+            width: 290px;
+            margin: auto;
+          }
+        }
+      }
+      &-text {
+        width: 44.25%;
+        @media screen and (max-width: 1024px) {
+          width: 100%;
+        }
+        @include mq(md, max) {
+          width: 50%;
+        }
+        @include mq(sm, max) {
+          width: 100%;
+        }
+        h3 {
+          font-size: 1.625rem;
+          line-height: 2.8125rem;
+          color: #fff;
+          font-weight: bold;
+          letter-spacing: 1.2px;
+          padding-bottom: 15px;
+          @media screen and (max-width: 1024px) {
+            padding-bottom: 17px;
+            font-size: 1.25rem;
+            letter-spacing: 2px;
+            line-height: 2.35rem;
+            letter-spacing: 1.9px;
+          }
+          @include mq(md, max) {
+            padding-bottom: 17px;
+            font-size: 1.25rem;
+            letter-spacing: 2px;
+            line-height: 2.35rem;
+            letter-spacing: 1.9px;
+          }
+        }
+        p {
+          font-size: 1rem;
+          line-height: 1.75rem;
+          color: #fff;
+          padding-bottom: 38px;
+          letter-spacing: 0.1px;
+          @media screen and (max-width: 1024px) {
+            padding-bottom: 26px;
+            font-size: 0.875rem;
+            line-height: 1.64rem;
+            letter-spacing: 1px;
+          }
+          @include mq(md, max) {
+            padding-bottom: 26px;
+            font-size: 0.875rem;
+            line-height: 1.64rem;
+            letter-spacing: 1px;
+          }
+        }
+        a {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          max-width: 307px;
+          height: 65px;
+          width: 100%;
+          font-size: 0.8125rem;
+          line-height: 1.75rem;
+          color: #c0254b;
+          background-color: #fff;
+          margin-left: 3px;
+          letter-spacing: 0.4px;
+          &::before {
+            position: absolute;
+            top: 34px;
+            right: 29px;
+            transform: translateY(-50%);
+            color: #c0254b;
+            font-family: "Font Awesome 5 Free";
+            font-size: 0.8125rem;
+            font-weight: 600;
+            content: "\f054";
+            transition: 0.5s ease;
+            @media screen and (max-width: 1024px) {
+              top: 51%;
+              right: 8%;
+              font-size: 0.7rem;
+            }
+            @include mq(md, max) {
+              top: 51%;
+              right: 8%;
+              font-size: 0.7rem;
+            }
+          }
+          @media screen and (max-width: 1024px) {
+            margin-left: 22px;
+            font-size: 0.75rem;
+            letter-spacing: 1.6px;
+            height: 45px;
+            max-width: 215px;
+          }
+          @include mq(md, max) {
+            margin-left: 22px;
+            font-size: 0.75rem;
+            letter-spacing: 1.6px;
+            height: 45px;
+            max-width: 215px;
+          }
+        }
+      }
+    }
+  }
+  &__introGroup {
+    padding-top: 30px;
+    // @include mq(lg, max) {
+    //   padding-top: 78px;
+    // }
+    @media screen and (max-width: 1024px) {
+      padding-top: 44px;
+    }
+    @include mq(md, max) {
+      padding-top: 44px;
+    }
+    .c-title h2 {
+      padding-bottom: 28px;
+      letter-spacing: 2.3px;
+      padding-right: 5px;
+      @media screen and (max-width: 1024px) {
+        padding-bottom: 36px;
+        letter-spacing: 2px;
+      }
+      @include mq(md, max) {
+        padding-bottom: 36px;
+        letter-spacing: 2px;
+      }
+    }
+    &--row {
+      padding-top: 47px;
+      padding-bottom: 51px;
+      // @include mq(md, max) {
+      //   padding-bottom: 42px;
+      // }
+      @media screen and (max-width: 1024px) {
+        padding-top: 18px;
+        padding-bottom: 43px;
+        padding: 0 15px;
+      }
+      @include mq(md, max) {
+        padding-right: 10px;
+      }
+    }
+    &--box {
+      @media screen and (max-width: 1024px) {
+        &Wrap {
+          max-width: 50%;
+          flex: 50%;
+        }
+      }
+      @include mq(sm, max) {
+        &Wrap {
+          max-width: 100%;
+          flex: 100%;
+        }
+      }
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 50px;
+      @media screen and (max-width: 1024px) {
+        margin-bottom: 18px;
+      }
+      @include mq(md, max) {
+        margin-bottom: 18px;
+      }
+      &__img {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding-top: 18px;
+        padding-left: 22px;
+        @media screen and (max-width: 1024px) {
+          justify-content: start;
+          width: 50%;
+          padding-top: 25px;
+          padding-left: 0px;
+          display: flex;
+          justify-items: start;
+          align-items: unset;
+          img {
+            max-width: 65%;
+            margin-top: unset;
+          }
+        }
+        @include mq(sm, max) {
+          justify-content: start;
+          padding-top: 25px;
+          padding-left: 20px;
+          width: 26%;
+          img {
+            max-width: 60%;
+            margin-top: unset;
+            @include mq(sm, max) {
+              max-width: 78px;
+              margin-top: unset;
+            }
+          }
+        }
+      }
+      &__content {
+        padding-left: 10px;
+        padding-top: 7px;
+        width: 320px;
+        @media screen and (max-width: 1024px) {
+          width: 68.3%;
+          padding-top: 16px;
+          padding-left: 8px;
+        }
+        @include mq(md, max) {
+          width: 68.3%;
+          padding-top: 16px;
+          padding-left: 8px;
+        }
+        h3 {
+          font-size: 20px;
+          line-height: 1.75rem;
+          letter-spacing: 0.8px;
+          padding-bottom: 7px;
+          @media screen and (max-width: 1024px) {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            letter-spacing: 1.2px;
+            padding-bottom: 3px;
+          }
+          @include mq(md, max) {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            letter-spacing: 1.2px;
+            padding-bottom: 3px;
+          }
+        }
+        p {
+          font-size: 0.875rem;
+          line-height: 1.3125rem;
+          letter-spacing: 0.56px;
+          padding-left: 3px;
+          @media screen and (max-width: 1024px) {
+            font-size: 0.7rem;
+            letter-spacing: 1.2px;
+            line-height: 1.3rem;
+          }
+          @include mq(md, max) {
+            font-size: 0.7rem;
+            letter-spacing: 1.2px;
+            line-height: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+  &__map {
+    padding-bottom: 93px;
+    @media screen and (max-width: 1024px) {
+      padding-top: 45px;
+      padding-bottom: 134px;
+    }
+    @include mq(md, max) {
+      padding-top: 7px;
+      padding-bottom: 63px;
+    }
+    .c-title h2 {
+      letter-spacing: 2.5px;
+      padding-right: 4px;
+      padding-bottom: 28px;
+      @include mq(md, max) {
+        letter-spacing: 2px;
+        padding-bottom: 37px;
+      }
+    }
+    &--content {
+      padding-top: 58px;
+      @media screen and (max-width: 1024px) {
+        padding-top: 40px;
+        padding-right: 7px;
+        padding-left: 7px;
+      }
+      @include mq(md, max) {
+        padding-top: 40px;
+        padding-right: 7px;
+        padding-left: 7px;
+      }
+    }
+  }
+}

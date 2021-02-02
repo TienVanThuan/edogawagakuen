@@ -1,0 +1,232 @@
+/* =========================================================
+history - 学校の沿革ページ固有のオブジェクト
+========================================================= */
+.p-history {
+  .c-title h2 {
+    padding-bottom: 46px;
+  }
+  &__roots {
+    padding: 0 83px;
+    margin-bottom: 70px;
+    @media screen and (max-width: 1024px) {
+      padding: 0 15px;
+    }
+    &--content {
+      p {
+        font-size: 16px;
+        line-height: 45px;
+        @media screen and (max-width: 1024px) {
+          line-height: 2.1;
+          // font-size: 14px;
+        }
+      }
+    }
+    &--img {
+      display: flex;
+      margin-top: 84px;
+      // padding-left: 8px;
+      @media screen and (max-width: 480px) {
+        display: block;
+        padding-left: 0px;
+        margin-top: 20px;
+      }
+      &S {
+        padding-right: 25px;
+        @media screen and (max-width: 498px) {
+          padding: 0px;
+          text-align: center;
+        }
+        p {
+          font-size: 14px;
+          line-height: 41px;
+          text-align: center;
+          letter-spacing: 0px;
+          @media screen and (max-width: 498px) {
+            font-size: 13px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+  &__school {
+    padding: 0 83px;
+    margin-bottom: 80px;
+    @media screen and (max-width: 1024px) {
+      padding: 0 15px;
+    }
+    &Box {
+      display: flex;
+      justify-content: center;
+      @media screen and (max-width: 480px) {
+        display: block;
+      }
+      &--content {
+        width: 70%;
+        margin-right: 16px;
+        @media screen and (max-width: 498px) {
+          width: 100%;
+        }
+        p {
+          font-size: 16px;
+          line-height: 45px;
+          letter-spacing: 0px;
+          @media screen and (max-width: 1024px) {
+            line-height: 2.1;
+          }
+        }
+      }
+      &--img {
+        // margin-left: 16px;
+        padding-top: 17px;
+        text-align: center;
+        width: 29.8%;
+        @media screen and (max-width: 480px) {
+          width: 100%;
+          // margin-left: 16px;
+          text-align: center;
+          margin: 0 auto;
+        }
+        p {
+          font-size: 14px;
+          line-height: 45px;
+          @media screen and (max-width: 498px) {
+            font-size: 13px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+    &Content1 {
+      position: relative;
+    }
+    &Content {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 145px;
+      margin-right: 0;
+      width: 100%;
+      margin-left: auto;
+      @media screen and (max-width: 480px) {
+        margin-top: 170px;
+      }
+      &--img {
+        z-index: 99;
+        position: absolute;
+        top: -62px;
+        width: 28%;
+        left: 0;
+        @media screen and (max-width: 561px) {
+          width: 100%;
+          top: -125px;
+          text-align: center;
+        }
+      }
+      &--text {
+        position: relative;
+        margin-bottom: 40px;
+        width: 78.8%;
+        padding: 42px 29px 53px 63px;
+        background-color: #f3f3f3;
+        @media screen and (max-width: 561px) {
+          width: 100%;
+          padding: 53px 10px;
+        }
+        .textBox {
+          max-width: 494px;
+          width: 100%;
+          text-align: left;
+          margin-left: auto;
+          &-bottom {
+            text-align: right;
+            padding-right: 97px;
+            @media screen and (max-width: 320px) {
+              text-align: left;
+              padding-right: 0px;
+            }
+          }
+        }
+        p {
+          font-family: "Noto Serif JP", serif;
+          font-size: 22px;
+          font-weight: 400;
+          line-height: 45px;
+          letter-spacing: 0.2px;
+          @media screen and (max-width: 1104px) {
+            font-size: 19px;
+            line-height: 30px;
+          }
+        }
+        .sub-text {
+          position: absolute;
+          right: 29px;
+          font-family: inherit;
+          font-size: 12px;
+          line-height: 45px;
+          bottom: 5px;
+        }
+      }
+    }
+    &Text {
+      padding-top: 45px;
+      p {
+        font-size: 16px;
+        line-height: 45px;
+        @media screen and (max-width: 1104px) {
+          line-height: 2.1;
+        }
+      }
+    }
+  }
+  &__chronology {
+    padding: 0 83px;
+    margin-bottom: 140px;
+    @media screen and (max-width: 1024px) {
+      padding: 0 15px;
+    }
+    table {
+      width: 100%;
+      padding-top: 16px;
+      th {
+        width: 20.8%;
+        padding: 14px 0px;
+        background-color: #c0254b;
+        color: #fff;
+        font-weight: 200;
+        border-bottom: 2px solid #fff;
+        font-size: 16px;
+        line-height: 24px;
+        @media screen and (max-width: 498px) {
+          width: 32%;
+          font-size: 13px;
+          line-height: 22px;
+        }
+      }
+      td {
+        position: relative;
+        padding: 10px 13px 10px 47px;
+        letter-spacing: 0.7px;
+        background-color: #f3f3f3;
+        border-bottom: 2px solid #fff;
+        font-size: 16px;
+        line-height: 28px;
+        @media screen and (max-width: 498px) {
+          padding: 15px;
+          font-size: 13px;
+          line-height: 22px;
+        }
+        p {
+          &::before {
+            content: "・";
+            position: absolute;
+            font-size: 16px;
+            left: 31px;
+            @media screen and (max-width: 498px) {
+              left: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

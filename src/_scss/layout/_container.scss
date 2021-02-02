@@ -1,0 +1,52 @@
+/* =========================================================
+container - コンテンツの大枠
+========================================================= */
+
+// ---------------------------------------------------------------
+//  ■コンテンツの大枠
+//  グリッドシステムを使う際は必須です。
+// ---------------------------------------------------------------
+.l-container {
+  width: 100%;
+  margin: 0 auto;
+
+  // spサイズ
+  @include mq(sm, min) {
+    max-width: 100%;
+  }
+
+  //tbサイズ以上
+  @include mq(md, min) {
+    max-width: 100%;
+  }
+
+  // // pcサイズ以上
+  @include mq(lg, min) {
+    max-width: 1020px;
+  }
+
+  // 大きめのpcサイズ以上
+  @include mq(xl, min) {
+    max-width: 1300px;
+  }
+
+  // 横幅いっぱい
+  &--fluid {
+    max-width: 100% !important;
+  }
+}
+
+.c-wrap {
+  // max-width: 980px;
+  width: 100%;
+  margin: 0;
+  padding: 0 20px;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  @include mq(md, max) {
+    padding: 0px;
+  }
+}

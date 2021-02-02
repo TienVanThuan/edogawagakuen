@@ -1,0 +1,110 @@
+/* =========================================================
+access - アクセスマップページ固有のオブジェクト
+========================================================= */
+.p-access {
+  .p-dis_frame_ttl {
+    margin-bottom: 50px;
+  }
+  @media screen and (max-width: 425px) {
+    .l-row__col--6 {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  .c-title h2 {
+    padding-bottom: 46px;
+  }
+  &__map {
+    padding: 0 83px;
+    padding-bottom: 83px;
+    @media screen and (max-width: 1024px) {
+      padding: 0 15px;
+      padding-bottom: 60px;
+    }
+  }
+  &__list {
+    padding: 0 85px;
+    margin-bottom: 74px;
+    .l-row__col--6 {
+      margin-bottom: 72px;
+    }
+    @media screen and (max-width: 1024px) {
+      padding: 0 15px;
+    }
+    .box-list-content {
+      position: relative;
+      padding-bottom: 40px;
+      height: 100%;
+    }
+    &--content {
+      .box-list {
+        &_content {
+          display: flex;
+          justify-content: space-between;
+          padding-top: 14px;
+          padding-bottom: 40px;
+          @media screen and (max-width: 1299px) {
+            height: auto;
+          }
+          &--img {
+            padding-top: 10px;
+            padding-left: 6px;
+          }
+          &--text {
+            width: 80%;
+            padding-left: 20px;
+            p {
+              font-size: 14px;
+              line-height: 27px;
+              letter-spacing: 0.65px;
+              @media screen and (max-width: 1024px) {
+                font-size: 0.8rem;
+                letter-spacing: 1.2px;
+                line-height: 1.3rem;
+              }
+            }
+            h4 {
+              font-size: 20px;
+              line-height: 28px;
+              letter-spacing: 0.8px;
+              @media screen and (max-width: 1024px) {
+                padding-bottom: 3px;
+                font-size: 1rem;
+                letter-spacing: 1.2px;
+                line-height: 1.5rem;
+              }
+            }
+            .address {
+              padding-top: 16px;
+              line-height: 22px;
+              @media screen and (max-width: 1024px) {
+                font-size: 0.8rem;
+              }
+            }
+            .tel-fax {
+              line-height: 22px;
+              @media screen and (max-width: 1231px) {
+                .u-sp {
+                  display: block;
+                }
+              }
+              @media screen and (max-width: 1024px) {
+                .u-sp {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+        .c-btn {
+          max-width: 100%;
+          margin-top: 0;
+          margin-left: 0;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}

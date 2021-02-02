@@ -1,0 +1,38 @@
+/* =========================================================
+body - ボディのレイアウト
+========================================================= */
+
+.l-body {
+  @include flexbox;
+  @include flex-dir(column);
+  min-height: 100vh;
+  position: relative;
+  &.home,
+  &.disclosure,
+  &.message,
+  &.philosophy,
+  &.access,
+  &.officer,
+  &.history {
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+  }
+  &.is-open {
+    &::before {
+      width: 100%;
+      max-width: 1300px;
+      margin: auto;
+      content: "";
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: black;
+      z-index: 2000;
+      opacity: 0.3;
+    }
+  }
+}

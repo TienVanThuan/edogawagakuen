@@ -1,0 +1,26 @@
+/* =========================================================
+footer - フッターのレイアウト
+========================================================= */
+
+.l-footer {
+  padding: 28px 20px 24px;
+  background: #c0254b;
+  font-size: 0.75rem;
+  line-height: 1.75rem;
+  color: #fff;
+  text-align: center;
+  @include mq(sm, max) {
+    padding: 7px 20px 5px;
+  }
+  p {
+    margin-left: -20px;
+    letter-spacing: 0.5px;
+    @include mq(lg, max) {
+      letter-spacing: 0.5px;
+      margin-left: 2px;
+    }
+    @include mq(sm, max) {
+      font-size: 10px;
+    }
+  }
+}
